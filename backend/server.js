@@ -14,7 +14,7 @@ dotenv.config();
 
 const __dirname = path.resolve();
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 2001;
 
 //middlewares
 app.use(express.json()); // to parse the incoming requests with JSON payloads (from req.body)
