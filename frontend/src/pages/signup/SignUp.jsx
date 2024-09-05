@@ -45,7 +45,6 @@ const SignUp = () => {
 							}
 						/>
 					</div>
-
 					<div>
 						<label className="label p-2 ">
 							<span className="text-base label-text">Username</span>
@@ -60,7 +59,6 @@ const SignUp = () => {
 							}
 						/>
 					</div>
-
 					<div>
 						<label className="label">
 							<span className="text-base label-text">Password</span>
@@ -75,7 +73,6 @@ const SignUp = () => {
 							}
 						/>
 					</div>
-
 					<div>
 						<label className="label">
 							<span className="text-base label-text">Confirm Password</span>
@@ -90,20 +87,18 @@ const SignUp = () => {
 							}
 						/>
 					</div>
-
 					<GenderCheckbox
 						onCheckboxChange={handleCheckboxChange}
 						selectedGender={inputs.gender}
 					/>
-
+					<span>Already have an account? </span>
 					<Link
 						to={"/login"}
-						className="text-sm hover:underline hover:text-blue-600 mt-2 inline-block"
+						className="text-yellow-400 mt-2 inline-block"
 						href="#"
 					>
-						Already have an account?
+						Login
 					</Link>
-
 					<div>
 						<button
 							className="btn btn-block btn-sm mt-2 border border-slate-700"
